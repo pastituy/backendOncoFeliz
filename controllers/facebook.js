@@ -5,7 +5,7 @@ const router = express.Router();
 class FacebookZapierController {
   constructor() {
     this.zapierWebhookURL =
-      "https://hooks.zapier.com/hooks/catch/24344172/utp4ir2/";
+      "https://hooks.zapier.com/hooks/catch/24344172/u8e71r4/";
   }
 
   async publishToFacebook(req, res) {
