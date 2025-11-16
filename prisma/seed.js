@@ -3,6 +3,8 @@ const prisma = new PrismaClient();
 
 async function main() {
   //Usuario
+  await prisma.usuario.deleteMany();
+
   const users = [
     {
       nombre: "Celso del Romero",
@@ -24,7 +26,7 @@ async function main() {
     },
     {
       nombre: "Jhoselin cespedez",
-      email: "jhoselin@gmail.com",
+      email: "jhoseln@gmail.com",
       telefono: "+591 68548252",
       pais: "Bolivia",
       password: "$2b$10$XpXYAQrdi7zGdhbLUKcBYeMhhUnFj1qM.vJXPm8K6wUEa03xYrYxW",
